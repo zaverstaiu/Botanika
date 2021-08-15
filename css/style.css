@@ -1,0 +1,113 @@
+:root {
+  --accent-c: #ae7c78;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* *:focus {
+  border: 2px solid #2a9e0d;
+} */
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--accent-c);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1230px;
+   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.xlg-title {
+  font-family: 'Playfair Display', 'Cambria', 'Times New Roman', serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.lg-title {
+  font-family: 'Playfair Display','Cambria','Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+.md-title {
+  font-family: 'Montserrat','Arial', 'Tahoma', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sm-title {
+  font-family: 'Montserrat','Arial','Tahoma',sans-serif;
+  font-weight: 500;
+}
