@@ -1,5 +1,6 @@
 :root {
   --accent-c: #ae7c78;
+  --white-t: #fff;
 }
 html {
   box-sizing: border-box;
@@ -111,3 +112,20 @@ button {
   font-family: 'Montserrat','Arial','Tahoma',sans-serif;
   font-weight: 500;
 }
+
+
+/* header */
+
+
+
+/* /header */
+
+
+/* footer */
+
+.footer {
+  background-color: var(--accent-c);
+  color: var(--white-t);
+}
+
+/* /footer */
