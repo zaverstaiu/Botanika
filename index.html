@@ -14,28 +14,32 @@
   <!-- header -->
 
 <header class="header">
-  <div class="container">
-    <div class="header__top">
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-        </ul>
-      </nav>
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" width="100" height="33" alt="Компания Ботаника">
-      </a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="user">
-        <button class="user__btn">Корзина</button>
+  <div class="header-inner">
+    <div class="container">
+      <div class="header__top">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+          </ul>
+        </nav>
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" width="100" height="33" alt="Компания Ботаника">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user">
+          <button class="user__btn" type="button">Корзина</button>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="header__hero">
       <div class="hero-content">
         <h1 class="xlg-title">Авторские букеты в Петербурге</h1>
@@ -98,11 +102,18 @@
           </p>
           <span class="popular__size">30 × 40 см</span>
           <span class="popular__price">3600 руб.</span>
+          <a class="popular__link" href="#">Заказать</a>
         </div>
         <div class="popular__images">
           <img src="images/popular.png" width="387" height="438" alt="Букет роз">
         </div>
       </div>
+      <button class="popular__btn popular-prev">
+        <img class="popular__btn-img" src="images/icon/prev.svg" alt="стрелка назад">
+      </button>
+      <button class="popular__btn popular-next">
+        <img class="popular__btn-img" src="images/icon/next.svg" alt="стрелка вперёд">
+      </button>
     </div>
   </section>
   <!-- /popular -->
@@ -245,7 +256,7 @@
   </section>
   <!-- /reviews -->
   <!-- contacts -->
-  <section class="contacts">
+  <section class="contacts" style="background: url('images/map.jpg') no-repeat center /cover;">
     <div class="container">
       <div class="contacts-inner">
         <h2 class="lg-title">Мы ждем вас</h2>
@@ -279,35 +290,45 @@
 
 <footer class="footer">
   <div class="container">
-    <a class="logo" href="#">
-      <img class="logo__img" src="images/logo-white.svg" width="100" height="33" alt="Компания Ботаника">
-    </a>
-    <div class="footer__nav">
-      <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+    <div class="footer-inner">
+      <a class="logo footer-logo" href="#">
+        <img class="logo__img" src="images/logo-white.svg" width="100" height="33" alt="Компания Ботаника">
+      </a>
+      <ul class="menu__list footer-menu__list">
+        <li class="menu__item footer-menu__item">
+          <a class="menu__link footer-menu__link" href="#">Каталог</a>
+        </li>
+        <li class="menu__item footer-menu__item">
+          <a class="menu__link footer-menu__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="menu__item footer-menu__item">
+          <a class="menu__link footer-menu__link" href="#">Отзывы</a>
+        </li>
+        <li class="menu__item footer-menu__item">
+          <a class="menu__link footer-menu__link" href="#">Спецпредложения</a>
+        </li>
+        <li class="menu__item footer-menu__item">
+          <a class="menu__link footer-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img class="socials__img" src="images/icon/instagram_icon.svg" width="25" height="20" alt="инстаграмм">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img class="socials__img" src="images/icon/facebook_icon.svg" width="25" height="20" alt="фейсбук">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <img class="socials__img" src="images/icon/twitter_icon.svg" width="25" height="20" alt="твиттер">
+          </a>
+        </li>
       </ul>
     </div>
-    <ul class="socials">
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          <img class="socials__img" src="images/icon/instagram_icon.svg" width="25" height="20" alt="инстаграмм">
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          <img class="socials__img" src="images/icon/facebook_icon.svg" width="25" height="20" alt="фейсбук">
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          <img class="socials__img" src="images/icon/twitter_icon.svg" width="25" height="20" alt="твиттер">
-        </a>
-      </li>
-    </ul>
   </div>
 </footer>
 
