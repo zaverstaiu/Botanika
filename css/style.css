@@ -126,7 +126,7 @@ button {
   border-top: 1px solid var(--accent-c);
   border-bottom: 1px solid var(--accent-c);
 }
-.header__top {
+.header__menu {
   display: flex;
   align-items: center;
   padding: 15px 0;
@@ -135,7 +135,7 @@ button {
   display: flex;
 }
 .menu__item+.menu__item {
-  margin-left: 80px;
+  margin-left: 5em;
 }
 .menu__item:hover,
 .user__btn:hover {
