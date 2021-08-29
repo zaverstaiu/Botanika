@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Botanika</title>
 </head>
 <body class="page">
@@ -32,24 +33,20 @@
         <div class="user">
           <button class="user__btn" type="button">Корзина</button>
         </div>
+        <button class="mobile-btn">
+          <svg width="25" height="25">
+            <use class="mobile-btn__menu" xlink:href="images/icon/sprite.svg#menu"></use>
+            <use class="mobile-btn__close" xlink:href="images/icon/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Каталог</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Доставка и оплата</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Отзывы</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Спецпредложения</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакты</a></li>
+        </ul>
       </nav>
-    </div>
-  </div>
-  <div class="container">
-    <div class="header__hero">
-      <div class="hero-content">
-        <h1 class="xlg-title">Авторские букеты в Петербурге</h1>
-        <p class="hero-text">
-          Оригинальные свежие букеты с доставкой по всему городу
-        </p>
-        <a class="hero-link" href="#">Смотреть каталог</a>
-      </div>
-      <div class="hero-images">
-        <img src="images/hero1.jpg" width="386" height="405" alt="Букет тюльпанов">
-      </div>
-      <div class="hero-images">
-        <img src="images/hero2.jpg" width="387" height="420" alt="Букет роз">
-      </div>
     </div>
   </div>
 </header>
@@ -59,8 +56,30 @@
   <!-- main -->
 
 <main class="main">
+
+  <!-- hero --------------------------- -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero-content">
+          <h1 class="xlg-title">Авторские букеты <span class="xlg-title-i">в Петербурге</span></h1>
+          <p class="hero-text">
+            Оригинальные свежие букеты с доставкой по всему городу
+          </p>
+          <a class="hero-link" href="#">Смотреть каталог</a>
+        </div>
+        <div class="hero-images hero-tulip">
+          <img class="hero-images-thumb" src="images/hero-tulip.jpg" width="386" height="405" alt="Букет тюльпанов">
+        </div>
+        <div class="hero-images hero-rose">
+          <img class="hero-images-thumb" src="images/hero-rose.jpg" width="387" height="420" alt="Букет роз">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /hero -->
   <!-- advantages -->
-  <section class="advantages">
+  <!-- <section class="advantages">
     <div class="container">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list">
@@ -84,10 +103,10 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
   <!-- /advantages -->
   <!-- popular -->
-  <section class="popular">
+  <!-- <section class="popular">
     <div class="container">
       <h2 class="lg-title popular__title">Популярные букеты</h2>
       <div class="popular__inner">
@@ -111,10 +130,10 @@
         <img class="popular__btn-img" src="images/icon/next.svg" alt="стрелка вперёд">
       </button>
     </div>
-  </section>
+  </section> -->
   <!-- /popular -->
   <!-- catalog -->
-  <section class="catalog">
+  <!-- <section class="catalog">
     <div class="container">
       <h2 class="visually-hidden">Разделы каталога</h2>
       <div class="catalog__inner">
@@ -141,10 +160,10 @@
         </article>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- /catalog -->
   <!-- discount -->
-  <section class="discount">
+  <!-- <section class="discount">
     <div class="container">
       <div class="discount__content">
         <h2 class="xlg-title">Скидка 10% на первый заказ</h2>
@@ -156,10 +175,10 @@
         <img class="discount__images-thumb" src="images/discount.jpg" width="590" height="391" alt="Красивый букет роз">
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- /discount -->
   <!-- steps -->
-  <section class="steps">
+  <!-- <section class="steps">
     <div class="container">
       <ul class="steps__list">
         <li class="steps__item">
@@ -188,10 +207,10 @@
         </li>
       </ul>
     </div>
-  </section>
+  </section> -->
   <!-- /steps -->
   <!-- news -->
-  <section class="news">
+  <!-- <section class="news">
     <div class="container">
       <div class="news__content">
         <h2 class="lg-title">Следите за нашими новостями</h2>
@@ -222,10 +241,10 @@
         <img class="news__images-thumb" src="images/news3.jpg" width="387" height="460" alt="Красивый букет роз">
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- /news -->
   <!-- reviews -->
-  <section class="reviews">
+  <!-- <section class="reviews">
     <div class="container">
       <h2 class="lg-title">Отзывы</h2>
       <div class="reviews-inner">
@@ -249,10 +268,10 @@
         </blockquote>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- /reviews -->
   <!-- contacts -->
-  <section class="contacts" style="background: url('images/map.jpg') no-repeat center /cover;">
+  <!-- <section class="contacts" style="background: url('images/map.jpg') no-repeat center /cover;">
     <div class="container">
       <div class="contacts-inner">
         <h2 class="lg-title">Мы ждем вас</h2>
@@ -276,7 +295,7 @@
         </address>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- /contacts -->
 </main>
 
@@ -329,6 +348,9 @@
 </footer>
 
   <!-- /footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

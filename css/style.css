@@ -1,6 +1,6 @@
 :root {
   --accent-c: #ae7c78;
-  --hov: #f1b6b3;
+  --hov: #8d6865;
   --white-t: #fff;
   --bg-l: #f7fafc;
 }
@@ -14,10 +14,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-/* *:focus {
-  border: 2px solid #2a9e0d;
-} */
 
 body {
   height: 100vh;
@@ -97,6 +93,13 @@ button {
   line-height: 1.33;
 }
 
+.xlg-title-i {
+  font-family: 'Playfair Display-Italic', 'Cambria', 'Times New Roman', serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
 .lg-title {
   font-family: 'Playfair Display','Cambria','Times New Roman', serif;
   font-size: 2.25rem;
@@ -117,10 +120,10 @@ button {
 }
 
 
-/* header */
+/* header ------------------------------------- */
 
 .header {
-  padding-top: 26px;
+  padding-top: 1.625em;
 }
 .header-inner {
   border-top: 1px solid var(--accent-c);
@@ -129,7 +132,7 @@ button {
 .header__menu {
   display: flex;
   align-items: center;
-  padding: 15px 0;
+  padding: 0.94em 0;
 }
 .menu__list {
   display: flex;
@@ -150,11 +153,63 @@ button {
   width: 100%;
 }
 .user {
-  margin-left: 90px;
+  margin-left: 5.63em;
+}
+.mobile-btn,
+.mobile-menu__list {
+  display: none;
 }
 
 
-/* /header */
+/* /header ------------------------------- */
+
+/* hero ------------------------------- */
+
+.hero__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+  padding: 5.125em 0 1.5em;
+}
+.hero-content {
+  max-width: 390px;
+}
+.hero-text {
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+  font-size: 1.5rem;
+}
+.hero-link {
+  display: inline-block;
+  padding: 1.875em 4.375em;
+  border-radius: 40px;
+  background-color: var(--accent-c);
+  color: var(--white-t);
+}
+.hero-link:hover,
+.hero-link:focus {
+  background-color: var(--hov);
+}
+.hero-images {
+  max-width: 386px;
+  min-height: 404px;
+}
+.hero-images-thumb {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.hero-tulip {
+  align-self: flex-end;
+  margin: 0 auto;
+}
+.hero-rose {
+  margin-bottom: 2.63em;
+}
+
+/* /hero ------------------------------- */
 
 /* main */
 
