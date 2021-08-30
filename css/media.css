@@ -1,3 +1,11 @@
+@media screen and (max-width: 1200px) {
+
+  /* hero --------------------------*/
+  .hero-rose {
+    margin-top: 3.125em;
+  }
+}
+
 @media screen and (max-width: 1100px) {
 
   /* header --------------------------*/
@@ -25,7 +33,7 @@
   }
   .menu__link {
     display: block;
-    padding: 20px 0;
+    padding: 1.25em 0;
   }
   .mobile-menu__list {
     position: fixed;
@@ -42,7 +50,7 @@
   }
   .mobile-menu__link {
     display: block;
-    padding: 20px 50px;
+    padding: 1.25em 3.125em;
   }
   .mobile-menu__link:hover,
   .mobile-menu__link:focus {
@@ -77,11 +85,38 @@
 
   /* footer ----------------------------- */
   .footer-logo {
-    margin-left: 50px;
+    margin-left: 3.125em;
   }
   .socials {
-    margin-right: 50px;
+    margin-right: 3.125em;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+  /* hero ----------------------------- */
+  .hero-content {
+    max-width: 60%;
+    margin-bottom: 3.125em;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  /* hero ----------------------------- */
+  .xlg-title,
+  .xlg-title-i {
+    font-size: 1.875rem;
+  }
+  .hero-text {
+    font-size: 1.25rem;
+  }
+  .hero-rose {
+    margin-right: 0;
+    margin-top: 1.25em;
   }
 }
 
@@ -90,6 +125,11 @@
   /* header ----------------------------- */
   .mobile-menu__list {
     text-align: center;
+  }
+
+  /* hero ----------------------------- */
+  .hero-text {
+  	font-size: 1rem;
   }
 
   /* footer ----------------------------- */

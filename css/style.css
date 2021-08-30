@@ -169,20 +169,19 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 1.5em;
-  padding: 5.125em 0 1.5em;
+  padding: 3.125em 0 1.5em;
 }
 .hero-content {
   max-width: 390px;
 }
 .hero-text {
   margin-top: 1.5em;
-  margin-bottom: 4em;
+  margin-bottom: 2.4em;
   font-size: 1.5rem;
 }
 .hero-link {
   display: inline-block;
-  padding: 1.875em 4.375em;
+  padding: 1.25em 3.125em;
   border-radius: 40px;
   background-color: var(--accent-c);
   color: var(--white-t);
@@ -207,9 +206,45 @@ button {
 }
 .hero-rose {
   margin-bottom: 2.63em;
+  margin-right: 1.25em;
 }
 
 /* /hero ------------------------------- */
+
+/* advantages ------------------------------- */
+
+.advantages_inner {
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+}
+.advantages__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  max-width: 357px;
+}
+.advantages__item+.advantages__item {
+  margin-left: 3.125em;
+}
+.advantages__item-car {
+  padding-left: 6.25em;
+  background: url('../images/icon/car.svg') no-repeat top left;
+}
+.advantages__item-bouquet {
+  padding-left: 4.5em;
+  background: url('../images/icon/bouquet.svg') no-repeat top left;
+}
+.advantages__item-photo {
+  padding-left: 4.875em;
+  background: url('../images/icon/photo.svg') no-repeat top left;
+}
+.advantages__title {
+  margin-bottom: 0.5em;
+}
+
+/* /advantages ------------------------------- */
 
 /* main */
 
@@ -218,11 +253,11 @@ button {
 .contacts {
   max-width: 100vw;
   min-height: 645px;
-  padding-top: 52px;
+  padding-top: 3.25em;
 }
 .contacts-inner {
   max-width: 386px;
-  margin-left: 100px;
+  margin-left: 6.25em;
   border-radius: 12px;
   background-color: var(--bg-l);
   box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
@@ -242,7 +277,7 @@ button {
 .footer-inner {
   display: flex;
   align-items: center;
-  padding: 20px 0 40px 0;
+  padding: 1.25em 0 2.5em 0;
 }
 .footer-logo {
   margin: 0;
@@ -251,14 +286,14 @@ button {
   margin: 0 auto;
 }
 .footer-menu__item+.footer-menu__item {
-  margin-left: 68px;
+  margin-left: 4.25em;
 }
 .socials {
   display: flex;
   align-items: center;
 }
 .socials__item+.socials__item {
-  margin-left: 18px;
+  margin-left: 1.125em;
 }
 
 /* /footer */
