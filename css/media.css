@@ -36,6 +36,9 @@
 
 @media screen and (max-width: 870px) {
 
+  body.lock {
+    overflow: hidden;
+  }
   /* header ----------------------------- */
   .menu__list {
     display: none;
@@ -75,11 +78,11 @@
   .mobile-btn__close {
     opacity: 0;
   }
-  .mobile-btn__menu--open {
-    opacity: 0;
-  }
-  .mobile-btn__close--open {
+  .mobile-btn--open .mobile-btn__close {
     opacity: 1;
+  }
+  .mobile-btn--open .mobile-btn__menu {
+    opacity: 0;
   }
   .logo {
     position: relative;

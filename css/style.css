@@ -1,8 +1,8 @@
 :root {
   --accent-c: #ae7c78;
-  --hov: #8d6865;
+  --hov: #ae7c78c9;
   --white-t: #fff;
-  --bg-l: #f7fafc;
+  --bg-l: rgba(255, 229, 227, 0.35);
 }
 html {
   box-sizing: border-box;
@@ -137,12 +137,30 @@ button {
 .menu__list {
   display: flex;
 }
+.menu__item {
+	position: relative;
+}
 .menu__item+.menu__item {
   margin-left: 5em;
 }
-.menu__item:hover,
-.user__btn:hover {
-  color: var(--hov);
+.user__btn::after,
+.menu__link::after,
+.user__btn::after,
+.menu__link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-c);
+  transition: .15s ease-in;
+}
+.user__btn:hover::after,
+.menu__link:hover::after,
+.user__btn:focus::after,
+.menu__link:focus::after {
+  width: 100%;
 }
 .logo {
   max-width: 100px;
@@ -153,6 +171,7 @@ button {
   width: 100%;
 }
 .user {
+  position: relative;
   margin-left: 5.63em;
 }
 .mobile-btn,
@@ -361,6 +380,9 @@ button {
 }
 .footer-menu__item+.footer-menu__item {
   margin-left: 4.25em;
+}
+.footer-menu__link::after {
+	background-color: var(--white-t);
 }
 .socials {
   display: flex;
