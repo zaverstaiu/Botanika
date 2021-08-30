@@ -250,26 +250,54 @@ button {
 
 /* popular ------------------------------- */
 
-.popular__title {
-  margin-bottom: 1.055em;
-  text-align: center;
-}
 .popular__inner {
   max-width: 68%;
   margin: 0 auto;
   padding: 2.5em 0;
 }
+.popular__title {
+	margin-bottom: 1.055em;
+	text-align: center;
+}
 .popular__item {
   display: flex;
+  justify-content: center;
   max-width: 100%;
+  margin-bottom: 1.5em;
 }
 .popular__content {
   max-width: 50%;
   padding: 0 0.625em;
 }
+.popular__content-title {
+  margin-bottom: 0.83em;
+}
+.popular__text {
+  margin-bottom: 1.5em;
+}
+.popular__size {
+  display: block;
+  margin-bottom: 1.5em;
+}
+.popular__price {
+  display: block;
+  margin-bottom: 3.92em;
+  font-size: 1.5rem;
+}
+.popular__link {
+  padding: 30px 100px;
+  border-radius: 40px;
+  background-color: var(--accent-c);
+  color: var(--white-t);
+  transition: background-color .2s ease-in;
+}
+.popular__link:hover {
+  background-color: var(--hov);
+}
 .popular__images {
   max-width: 50%;
   max-height: 438px;
+  margin-left: 1.25em;
 }
 .popular__images-thumb {
   width: 100%;
@@ -285,6 +313,14 @@ button {
 }
 
 /* /popular ------------------------------- */
+
+/* catalog ------------------------------- */
+
+.catalog__inner {
+  padding: 2.5em 0;
+}
+
+/* /catalog ------------------------------- */
 
 /* contacts */
 
