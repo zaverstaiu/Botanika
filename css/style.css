@@ -163,6 +163,8 @@ button {
 
 /* /header ------------------------------- */
 
+/* main */
+
 /* hero ------------------------------- */
 
 .hero__inner {
@@ -192,7 +194,7 @@ button {
 }
 .hero-images {
   max-width: 386px;
-  min-height: 404px;
+  max-height: 404px;
 }
 .hero-images-thumb {
   width: 100%;
@@ -213,7 +215,7 @@ button {
 
 /* advantages ------------------------------- */
 
-.advantages_inner {
+.advantages__inner {
   padding-top: 1.5em;
   padding-bottom: 2.5em;
 }
@@ -246,7 +248,43 @@ button {
 
 /* /advantages ------------------------------- */
 
-/* main */
+/* popular ------------------------------- */
+
+.popular__title {
+  margin-bottom: 1.055em;
+  text-align: center;
+}
+.popular__inner {
+  max-width: 68%;
+  margin: 0 auto;
+  padding: 2.5em 0;
+}
+.popular__item {
+  display: flex;
+  max-width: 100%;
+}
+.popular__content {
+  max-width: 50%;
+  padding: 0 0.625em;
+}
+.popular__images {
+  max-width: 50%;
+  max-height: 438px;
+}
+.popular__images-thumb {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.popular__btn-box {
+  width: 130px;
+  margin: 0 auto;
+}
+.popular__btn+.popular__btn {
+  margin-left: 20px;
+}
+
+/* /popular ------------------------------- */
 
 /* contacts */
 
