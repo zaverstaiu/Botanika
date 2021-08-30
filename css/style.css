@@ -250,15 +250,15 @@ button {
   margin-left: 3.125em;
 }
 .advantages__item-car {
-  padding-left: 6.25em;
+  padding-left: 102px;
   background: url('../images/icon/car.svg') no-repeat top left;
 }
 .advantages__item-bouquet {
-  padding-left: 4.5em;
+  padding-left: 65px;
   background: url('../images/icon/bouquet.svg') no-repeat top left;
 }
 .advantages__item-photo {
-  padding-left: 4.875em;
+  padding-left: 80px;
   background: url('../images/icon/photo.svg') no-repeat top left;
 }
 .advantages__title {
@@ -390,6 +390,13 @@ button {
 }
 .socials__item+.socials__item {
   margin-left: 1.125em;
+}
+.socials__link {
+  fill: var(--white-t);
+}
+.socials__link:hover,
+.socials__link:focus {
+  fill: var(--bg-l);
 }
 
 /* /footer */
