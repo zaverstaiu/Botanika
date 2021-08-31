@@ -11,21 +11,21 @@ $(function () {
     $("button").each(function (b) {//элемент (кнопка)
       if (this.title) {
         var c = this.title;
-        var x = 25;//расположение по горизонтали(left)
+        var x = -30;//расположение по горизонтали(left)
         var y = 30;//расположение по вертикали (top)
         $(this).mouseover(function (d) {
           this.title = "";
-          $("body").append('<div id="tooltip">' + c + "</div>");
-          $("#tooltip").css({
+          $("body").append('<div class="tooltip">' + c + "</div>");
+          $(".tooltip").css({
             left: (d.pageX + x) + "px",
             top: (d.pageY + y) + "px",
             opacity: "1"//полупрозрачность
           }).show(500);//скорость появления подсказки
         }).mouseout(function () {
           this.title = c;
-          $("#tooltip").remove();
+          $(".tooltip").remove();
         }).mousemove(function (d) {
-          $("#tooltip").css({
+          $(".tooltip").css({
             left: (d.pageX + x) + "px",
             top: (d.pageY + y) + "px"
           });

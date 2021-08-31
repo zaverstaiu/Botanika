@@ -56,18 +56,18 @@ button {
   color: var(--accent-c);
 }
 
-#tooltip {
+.tooltip {
 	position: absolute;
   display: none;
   max-width: 250px;
 	padding: 5px 10px;
 	background: var(--hov);
-  font-weight: 500;
 	font-size: 14px;
+  letter-spacing: 0.07em;
 	text-align: center;
 	text-shadow: none;
 	color: var(--white-t);
-	z-index: 10;
+	z-index: 100;
 }
 
 .visually-hidden {
