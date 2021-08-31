@@ -1,6 +1,6 @@
 :root {
   --accent-c: #ae7c78;
-  --hov: #ae7c78c9;
+  --hov: rgba(174, 124, 120, 0.7);
   --white-t: #fff;
   --bg-l: rgba(255, 229, 227, 0.35);
 }
@@ -48,11 +48,26 @@ p {
 }
 
 button {
+  position: relative;
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
   color: var(--accent-c);
+}
+
+#tooltip {
+	position: absolute;
+  display: none;
+  max-width: 250px;
+	padding: 5px 10px;
+	background: var(--hov);
+  font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: none;
+	color: var(--white-t);
+	z-index: 10;
 }
 
 .visually-hidden {
