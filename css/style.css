@@ -56,6 +56,11 @@ button {
   color: var(--accent-c);
 }
 
+blockquote {
+  margin: 0;
+}
+
+
 .tooltip {
 	position: absolute;
   display: none;
@@ -537,6 +542,36 @@ button {
 }
 
 /* /news ------------------------------- */
+
+/* reviews ------------------------------- */
+
+.reviews__wrap {
+  padding-top: 2.5em;
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+.reviews__title {
+  margin-bottom: 1.11em;
+}
+.reviews__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.reviews__item {
+  max-width: 300px;
+  margin-right: 6.625em;
+  padding: 0 0.625em;
+}
+.reviews__item:last-child {
+  margin-right: 0;
+}
+.reviews__item-text {
+  margin-bottom: 1em;
+}
+
+/* /reviews ------------------------------- */
 
 /* contacts -------------------------------- */
 

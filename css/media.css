@@ -60,6 +60,23 @@
   }
 }
 
+@media screen and (max-width: 1142px) {
+
+  /* reviews ------------------------ */
+  .reviews__inner {
+  	max-width: 70%;
+  	margin: 0 auto 2.5em;
+  }
+  .reviews__item {
+    max-width: 50%;
+    margin-bottom: 1.875em;
+    margin-right: 0;
+  }
+  .reviews__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 1099px) {
 
   /* header --------------------------*/
@@ -213,6 +230,14 @@
   .news__content-text {
     font-size: 1.25rem;
   }
+
+  /* reviews ----------------------------- */
+  .reviews__inner {
+  	max-width: 100%;
+  }
+  .reviews__item {
+  	max-width: 80%;
+  }
 }
 
 
@@ -230,6 +255,20 @@
   }
   .steps__item:nth-last-child(2) {
     margin-bottom: 1.875em;
+  }
+
+  /* news ------------------------------ */
+  .news__inner {
+    margin-bottom: 1.25em;
+  }
+
+  /* reviews ------------------------------ */
+  .reviews__wrap {
+    margin-bottom: 1.25em;
+  }
+  .reviews__inner {
+    margin-bottom: 1.25em;
+    padding-top: 1.25em;
   }
 }
 
@@ -275,6 +314,11 @@
   }
   .news__content-text {
   	font-size: 1.125rem;
+  }
+
+  /* reviews ----------------------------- */
+  .reviews__item {
+    max-width: 100%;
   }
 }
 
