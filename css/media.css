@@ -1,4 +1,4 @@
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1229px) {
 
   /* hero --------------------------*/
   .hero-rose {
@@ -6,8 +6,11 @@
   }
 
   /* advantages --------------------------*/
+  .advantages__list {
+    max-width: 70%;
+    margin: 0 auto;
+  }
   .advantages__item {
-    max-width: 40%;
     margin-bottom: 3.125em;
   }
   .advantages__item:last-child {
@@ -21,9 +24,43 @@
   .catalog__item-link {
   	bottom: 0;
   }
+
+  /* steps ----------------------------- */
+  .steps__list {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .steps__item {
+    margin-bottom: 1.875em;
+  }
+  .steps__item:last-child,
+  .steps__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  .steps__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* news ----------------------------- */
+  .news__inner {
+    max-width: 70%;
+    margin: 0 auto 2.5em;
+    text-align: center;
+  }
+  .news__content {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .news__title {
+    max-width: 100%;
+  }
+  .news__images {
+  	max-width: 100%;
+  }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1099px) {
 
   /* header --------------------------*/
   .menu__item+.menu__item {
@@ -35,6 +72,7 @@
     margin: 0 auto 50px;
     padding-left: 0;
   }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -45,6 +83,16 @@
   }
   .user {
   	margin-left: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 924px) {
+
+  /* steps ----------------------------- */
+  .advantages__list,
+  .steps__list {
+  	max-width: 100%;
   }
 }
 
@@ -160,6 +208,29 @@
   .catalog__inner {
     margin-bottom: 0;
   }
+
+  /* news ----------------------------- */
+  .news__content-text {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media screen and (max-width: 619px) {
+
+  /* advantages --------------------------*/
+  .advantages__item-car:first-child {
+  	padding-left: 5em;
+  }
+
+  /* steps ----------------------------- */
+  .steps__item,
+  .advantages__item {
+    background-size: 72px 52px;
+  }
+  .steps__item:nth-last-child(2) {
+    margin-bottom: 1.875em;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -190,6 +261,20 @@
   /* discount ---------------------------- */
   .discount__content-title {
     padding: 0.625em;
+  }
+
+  /* steps ----------------------------- */
+  .steps__inner {
+    margin-bottom: 1.25em;
+  }
+
+  /* news ----------------------------- */
+  .news__inner {
+    margin-bottom: 1.25em;
+    padding-top: 1.25em;
+  }
+  .news__content-text {
+  	font-size: 1.125rem;
   }
 }
 

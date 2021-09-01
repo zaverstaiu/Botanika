@@ -257,6 +257,7 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 .advantages__item {
   max-width: 357px;
@@ -433,6 +434,110 @@ button {
 
 /* /discount ------------------------------- */
 
+/* steps ------------------------------- */
+
+.steps__inner {
+  margin-bottom: 2.5em;
+  padding-top: 2.5em;
+  text-align: center;
+}
+.steps__title {
+  margin: 0 auto 1em;
+}
+.steps__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.steps__item {
+  max-width: 285px;
+  margin-right: 1.25em;
+  padding: 3.75em 0.31em 0;
+}
+.steps__item:last-child {
+  margin-right: 0;
+}
+.steps__item-pc {
+  background: url('../images/icon/pc.svg') no-repeat top;
+}
+.steps__item-woman {
+  background: url('../images/icon/woman.svg') no-repeat top;
+}
+.steps__item-card {
+  background: url('../images/icon/card.svg') no-repeat top;
+}
+.steps__item-car {
+  background: url('../images/icon/car.svg') no-repeat top;
+}
+.steps__item-title {
+  margin-bottom: 0.5em;
+}
+
+/* /steps ------------------------------- */
+
+/* news ------------------------------- */
+
+.news__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 2.5em;
+  padding-top: 2.5em;
+
+}
+.news__content {
+  max-width: 480px;
+  margin-right: auto;
+  padding: 0 0.625em;
+}
+.news__title {
+  margin-bottom: 1.11em;
+}
+.news__content-text {
+  margin-bottom: 1.66em;
+  font-size: 1.5rem;
+}
+.news-socials__link {
+  fill: var(--accent-c);
+}
+.news-socials__link:hover,
+.news-socials__link:focus {
+	fill: var(--hov);
+}
+.news__images {
+  display: grid;
+  grid-template-columns: 41.24% 56.06%;
+  grid-template-rows: repeat(2, 31.84%);
+  gap: 1.25em ;
+  max-width: 57.66%;
+}
+.news__images-thumb--a {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news__images-thumb--b {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news__images-thumb--c {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* /news ------------------------------- */
+
 /* contacts -------------------------------- */
 
 .contacts {
@@ -483,11 +588,11 @@ button {
 .socials__item+.socials__item {
   margin-left: 1.125em;
 }
-.socials__link {
+.footer-socials__link {
   fill: var(--white-t);
 }
-.socials__link:hover,
-.socials__link:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
   fill: var(--bg-l);
 }
 
