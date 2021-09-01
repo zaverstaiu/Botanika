@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>Botanika</title>
@@ -112,55 +114,55 @@
     <div class="container">
       <div class="popular__inner">
         <h2 class="lg-title popular__title">Популярные букеты</h2>
-        <div class="popular__item">
-          <div class="popular__content">
-            <h3 class="md-title popular__content-title">Букет «Нежность»</h3>
-            <p class="popular__text">
-              Элегантный букет, который станет отличным подарком на день рождения или юбилей.
-            </p>
-            <span class="popular__size">30 × 40 см</span>
-            <span class="popular__price">3600 руб.</span>
-            <a class="popular__link" href="#">Заказать</a>
+        <div class="popular__list">
+          <div class="popular__item-wrap">
+            <div class="popular__item">
+              <div class="popular__content">
+                <h3 class="md-title popular__content-title">Букет «Нежность»</h3>
+                <p class="popular__text">
+                  Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+                </p>
+                <span class="popular__size">30 × 40 см</span>
+                <span class="popular__price">3600 руб.</span>
+                <a class="popular__link" href="#">Заказать</a>
+              </div>
+              <div class="popular__images">
+                <img class="popular__images-thumb" src="images/popular.png" width="387" height="438" alt="Букет роз">
+              </div>
+            </div>
           </div>
-          <div class="popular__images">
-            <img class="popular__images-thumb" src="images/popular.png" width="387" height="438" alt="Букет роз">
+          <div class="popular__item-wrap">
+            <div class="popular__item">
+              <div class="popular__content">
+                <h3 class="md-title popular__content-title">Букет "Радуга"</h3>
+                <p class="popular__text">
+                  С таким букетом поднять настроение очень легко!
+                </p>
+                <span class="popular__size">30 × 40 см</span>
+                <span class="popular__price">959 грн.</span>
+                <a class="popular__link" href="#">Заказать</a>
+              </div>
+              <div class="popular__images">
+                <img class="popular__images-thumb" src="images/asters.png" width="387" height="438" alt="Букет роз">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="popular__item">
-          <div class="popular__content">
-            <h3 class="md-title popular__content-title">Букет "Радуга"</h3>
-            <p class="popular__text">
-              С таким букетом поднять настроение очень легко!
-            </p>
-            <span class="popular__size">30 × 40 см</span>
-            <span class="popular__price">959 грн.</span>
-            <a class="popular__link" href="#">Заказать</a>
+          <div class="popular__item-wrap">
+            <div class="popular__item">
+              <div class="popular__content">
+                <h3 class="md-title popular__content-title">Букет "Яркие солнышки!"</h3>
+                <p class="popular__text">
+                  Ясные солнышки хризантем порадуют дорогого получателя и подарят улыбку на любимом лице!
+                </p>
+                <span class="popular__size">30 × 40 см</span>
+                <span class="popular__price">399 грн.</span>
+                <a class="popular__link" href="#">Заказать</a>
+              </div>
+              <div class="popular__images">
+                <img class="popular__images-thumb" src="images/chrysanthemums.png" width="387" height="438" alt="Букет роз">
+              </div>
+            </div>
           </div>
-          <div class="popular__images">
-            <img class="popular__images-thumb" src="images/asters.png" width="387" height="438" alt="Букет роз">
-          </div>
-        </div>
-        <div class="popular__item">
-          <div class="popular__content">
-            <h3 class="md-title popular__content-title">Букет "Яркие солнышки!"</h3>
-            <p class="popular__text">
-              Ясные солнышки хризантем порадуют дорогого получателя и подарят улыбку на любимом лице!
-            </p>
-            <span class="popular__size">30 × 40 см</span>
-            <span class="popular__price">399 грн.</span>
-            <a class="popular__link" href="#">Заказать</a>
-          </div>
-          <div class="popular__images">
-            <img class="popular__images-thumb" src="images/chrysanthemums.png" width="387" height="438" alt="Букет роз">
-          </div>
-        </div>
-        <div class="popular__btn-box">
-          <button class="popular__btn popular-prev" type="button" title="назад">
-            <img class="popular__btn-img" src="images/icon/prev.svg" alt="стрелка назад">
-          </button>
-          <button class="popular__btn popular-next" type="button" title="вперёд">
-            <img class="popular__btn-img" src="images/icon/next.svg" alt="стрелка вперёд">
-          </button>
         </div>
       </div>
     </div>
@@ -408,6 +410,7 @@
   <!-- /footer -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

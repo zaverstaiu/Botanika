@@ -34,4 +34,14 @@ $(function () {
     });
   });
 
+  // слайдер
+
+$('.popular__list').slick({
+
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<button class="popular__btn popular-prev" type="button" title="назад"><img class= "popular__btn-img" src="images/icon/prev.svg" alt="стрелка назад" ></button>',
+  nextArrow: '<button class="popular__btn popular-next" type="button" title="вперёд"><img class= "popular__btn-img" src="images/icon/next.svg" alt="стрелка вперёд" ></button>'
+});
+
 });
