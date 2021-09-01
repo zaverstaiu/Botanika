@@ -412,7 +412,7 @@ button {
   max-width: 430px;
   margin-right: auto;
   padding-left: 6.375em;
-  /* padding: 2.4em 0 4em 6.375em; */
+  padding-bottom: 2.5em;
 }
 .discount__content-title {
   margin-bottom: 0.55em;
