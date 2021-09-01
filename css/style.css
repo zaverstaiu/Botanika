@@ -547,7 +547,7 @@ blockquote {
 
 .reviews__wrap {
   padding-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-bottom: 5em;
   text-align: center;
 }
 .reviews__title {
@@ -570,6 +570,10 @@ blockquote {
 .reviews__item-text {
   margin-bottom: 1em;
 }
+.reviews__item-title {
+  font-weight: 500;
+  font-style: normal;
+}
 
 /* /reviews ------------------------------- */
 
@@ -583,10 +587,36 @@ blockquote {
 .contacts-inner {
   max-width: 386px;
   margin-left: 6.25em;
+  padding: 2.5em 1.25em 4.06em 2.19em;
   border-radius: 12px;
-  background-color: var(--bg-l);
+  background-color: var(--white-t);
   box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
-  text-align: center;
+  text-align: left;
+}
+.contacts__title {
+  margin-bottom: 1.16em;
+}
+.post-office,
+.mode,
+.phone {
+  margin-bottom: 1.875em;
+}
+.post-office__title {
+  display: inline-block;
+  margin-bottom: 1.25em;
+}
+.mode__title,
+.phone__title {
+  display: inline-block;
+  margin-bottom: 0.875em;
+}
+.phone__link,
+.email__link {
+  display: block;
+}
+.email__title {
+  display: inline-block;
+  margin-bottom: 1.06em;
 }
 
 /* /contacts */

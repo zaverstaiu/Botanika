@@ -238,6 +238,11 @@
   .reviews__item {
   	max-width: 80%;
   }
+
+  /* contacts --------------------------- */
+  .contacts-inner {
+    margin: 0 auto;
+  }
 }
 
 
@@ -264,7 +269,7 @@
 
   /* reviews ------------------------------ */
   .reviews__wrap {
-    margin-bottom: 1.25em;
+    margin-bottom: 2.5em;
   }
   .reviews__inner {
     margin-bottom: 1.25em;
