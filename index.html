@@ -16,21 +16,21 @@
 
   <!-- header -->
 
-<header class="header">
+<header class="header" id="header">
   <div class="header-inner">
     <div class="container">
       <nav class="header__menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+        <ul class="menu__list" id="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#catalog">Каталог</a></li>
+          <li class="menu__item"><a class="menu__link" href="#hero">Доставка и оплата</a></li>
+          <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
         </ul>
-        <a class="logo" href="#">
+        <a class="logo">
           <img class="logo__img" src="images/logo.svg" width="100" height="33" alt="Компания Ботаника">
         </a>
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Спецпредложения</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        <ul class="menu__list" id="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#popular">Спецпредложения</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
         </ul>
         <div class="user">
           <button class="user__btn" type="button" title="Корзина">Корзина</button>
@@ -41,12 +41,12 @@
             <use class="mobile-btn__close" xlink:href="images/icon/sprite.svg#close"></use>
           </svg>
         </button>
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Каталог</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Доставка и оплата</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Отзывы</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Спецпредложения</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакты</a></li>
+        <ul class="mobile-menu__list" id="mobile-menu__list">
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#catalog">Каталог</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#hero">Доставка и оплата</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#reviews">Отзывы</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#popular">Спецпредложения</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -60,7 +60,7 @@
 <main class="main">
 
   <!-- hero -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="container">
       <div class="hero__inner">
         <div class="hero-content">
@@ -110,7 +110,7 @@
   </section>
   <!-- /advantages -->
   <!-- popular -->
-  <section class="popular">
+  <section class="popular" id="popular">
     <div class="container">
       <div class="popular__inner">
         <h2 class="lg-title popular__title">Популярные букеты</h2>
@@ -169,7 +169,7 @@
   </section>
   <!-- /popular -->
   <!-- catalog -->
-  <section class="catalog">
+  <section class="catalog" id="catalog">
     <div class="container">
       <h2 class="visually-hidden">Разделы каталога</h2>
       <div class="catalog__inner">
@@ -262,21 +262,21 @@
           </p>
           <ul class="socials news-socials">
             <li class="socials__item news-socials__item">
-              <a class="socials__link news-socials__link" href="#">
+              <a class="socials__link news-socials__link" href="https://www.instagram.com/flowers.ua_official" target="_blank">
                 <svg class="instagram" width="21" height="20">
                   <use xlink:href="images/icon/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item news-socials__item">
-              <a class="socials__link news-socials__link" href="#">
+              <a class="socials__link news-socials__link" href="https://www.facebook.com/flowers.ua" target="_blank">
                 <svg class="facebook" width="12" height="20">
                   <use xlink:href="images/icon/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item news-socials__item">
-              <a class="socials__link news-socials__link" href="#">
+              <a class="socials__link news-socials__link" href="https://twitter.com/" target="_blank">
                 <svg class="twitter" width="26" height="20">
                   <use xlink:href="images/icon/sprite.svg#twitter"></use>
                 </svg>
@@ -294,7 +294,7 @@
   </section>
   <!-- /news -->
   <!-- reviews -->
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <div class="reviews__wrap">
         <h2 class="lg-title reviews__title">Отзывы</h2>
@@ -325,7 +325,7 @@
   </section>
   <!-- /reviews -->
   <!-- contacts -->
-  <section class="contacts" style="background: url('images/map.jpg') no-repeat center /cover;">
+  <section class="contacts" id="contacts" style="background: url('images/map.jpg') no-repeat center /cover;">
     <div class="container">
       <div class="contacts-inner">
         <h2 class="lg-title contacts__title">Мы ждем вас</h2>
@@ -360,43 +360,43 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <a class="logo footer-logo" href="#">
+      <a class="logo footer-logo" href="#header">
         <img class="logo__img" src="images/logo-white.svg" width="100" height="33" alt="Компания Ботаника">
       </a>
-      <ul class="menu__list footer-menu__list">
+      <ul class="menu__list footer-menu__list" id="footer-menu__list">
         <li class="menu__item footer-menu__item">
-          <a class="menu__link footer-menu__link" href="#">Каталог</a>
+          <a class="menu__link footer-menu__link" href="#catalog">Каталог</a>
         </li>
         <li class="menu__item footer-menu__item">
-          <a class="menu__link footer-menu__link" href="#">Доставка и оплата</a>
+          <a class="menu__link footer-menu__link" href="#hero">Доставка и оплата</a>
         </li>
         <li class="menu__item footer-menu__item">
-          <a class="menu__link footer-menu__link" href="#">Отзывы</a>
+          <a class="menu__link footer-menu__link" href="#reviews">Отзывы</a>
         </li>
         <li class="menu__item footer-menu__item">
-          <a class="menu__link footer-menu__link" href="#">Спецпредложения</a>
+          <a class="menu__link footer-menu__link" href="#popular">Спецпредложения</a>
         </li>
         <li class="menu__item footer-menu__item">
-          <a class="menu__link footer-menu__link" href="#">Контакты</a>
+          <a class="menu__link footer-menu__link" href="#contacts">Контакты</a>
         </li>
       </ul>
       <ul class="socials footer-socials">
         <li class="socials__item footer-socials__item">
-          <a class="socials__link footer-socials__link" href="#">
+          <a class="socials__link footer-socials__link" href="https://www.instagram.com/flowers.ua_official" target="_blank">
             <svg class="instagram" width="21" height="20">
               <use xlink:href="images/icon/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item footer-socials__item">
-          <a class="socials__link footer-socials__link" href="#">
+          <a class="socials__link footer-socials__link" href="https://www.facebook.com/flowers.ua" target="_blank">
             <svg class="facebook" width="12" height="20">
               <use xlink:href="images/icon/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item footer-socials__item">
-          <a class="socials__link footer-socials__link" href="#">
+          <a class="socials__link footer-socials__link" href="https://twitter.com/" target="_blank">
             <svg class="twitter" width="26" height="20">
               <use xlink:href="images/icon/sprite.svg#twitter"></use>
             </svg>

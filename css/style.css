@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+   /* scroll-behavior: smooth; */
 }
 
 *,
@@ -198,6 +199,11 @@ blockquote {
 .mobile-menu__list {
   display: none;
 }
+.mobile-menu__list {
+  min-height: 150px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
 
 
 /* /header ------------------------------- */
@@ -302,8 +308,10 @@ blockquote {
 }
 .popular__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 100%;
 }
 .popular__content {
   max-width: 387px;
@@ -326,7 +334,7 @@ blockquote {
   font-size: 1.5rem;
 }
 .popular__link {
-  padding: 30px 100px;
+  padding: 1.875em 6.25em;
   border-radius: 40px;
   background-color: var(--accent-c);
   color: var(--white-t);
@@ -338,19 +346,22 @@ blockquote {
 .popular__images {
   max-width: 387px;
   min-height: 438px;
-  margin-left: 1.25em;
+  margin-left: auto;
 }
 .popular__images-thumb {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.popular__btn-box {
-  width: 130px;
-  margin: 0 auto;
+.popular__btn {
+  position: absolute;
+  bottom: -34px;
 }
-.popular__btn+.popular__btn {
-  margin-left: 20px;
+.popular-prev {
+  left: calc(50% - 65px);
+}
+.popular-next {
+  left: 50%;
 }
 
 /* /popular ------------------------------- */
@@ -610,14 +621,18 @@ blockquote {
 .phone__title {
   display: inline-block;
   margin-bottom: 0.875em;
+  font-style: normal;
 }
 .phone__link,
 .email__link {
   display: block;
+  font-style: normal;
+  font-weight: 500;
 }
 .email__title {
   display: inline-block;
   margin-bottom: 1.06em;
+  font-style: normal;
 }
 
 /* /contacts */

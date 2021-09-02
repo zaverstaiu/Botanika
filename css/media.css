@@ -133,7 +133,6 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    overflow: auto;
     background-color: var(--white-t);
     transform: translateX(-100%);
     transition: .2s ease-in;
@@ -243,6 +242,14 @@
   .contacts-inner {
     margin: 0 auto;
   }
+
+  /* popular ----------------------------- */
+  .popular__price {
+    margin-bottom: 1.9em;
+  }
+  .popular__link {
+    padding: 0.94em 3.125em;
+  }
 }
 
 
@@ -275,6 +282,12 @@
     margin-bottom: 1.25em;
     padding-top: 1.25em;
   }
+
+  /* popular ----------------------------- */
+  .popular__inner {
+    margin-bottom: 1.25em;
+  }
+
 }
 
 @media screen and (max-width: 520px) {
@@ -299,7 +312,7 @@
 
   /* catalog ---------------------------- */
   .catalog__inner {
-  	padding-bottom: 1.25em;
+    padding: 1.25em 0;
   }
 
   /* discount ---------------------------- */
@@ -338,6 +351,11 @@
   .hero-text {
   	font-size: 1rem;
   }
+
+   /* popular ----------------------------- */
+   .popular__images {
+     min-height: 220px;
+   }
 
   /* footer ----------------------------- */
   .footer-logo {
