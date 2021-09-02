@@ -678,3 +678,22 @@ blockquote {
 }
 
 /* /footer */
+
+/* scroll ------------------------- */
+
+.up-scroll {
+  position: fixed;
+  bottom: 150px;
+  right: 70px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--accent-c);
+  border-radius: 50%;
+  fill: var(--accent-c);
+}
+.scroll {
+  width: 30px;
+  height: 30px;
+}
+
+/* /scroll ------------------------- */
