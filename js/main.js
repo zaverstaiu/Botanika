@@ -99,31 +99,33 @@ $(function () {
   // закрываем модальное окно кнопкой Х
 
 
-  
+
 
 });
 
+// находим элементы
 let openBtn = document.querySelector('[data-modal]');
 let modal = document.querySelector('.modal');
 let closeBtn = document.querySelector('.modal__btn');
 
+// открываем окно
 openBtn.addEventListener('click', function () {
   modal.classList.toggle('modal--open');
   document.body.style.overflow = 'hidden';
 });
 
-
-closeBtn.addEventListener('click', function () {
+// функция закрытия окна
+function closeModal() {
   modal.classList.toggle('modal--open');
   document.body.style.overflow = '';
-});
+}
 
+// закрываем окно кнопкой Х
+closeBtn.addEventListener('click', closeModal);
 
+// закрываем окно кликом вне окна
 modal.addEventListener('click', function (e) {
   if (e.target === modal) {
-    modal.classList.toggle('modal--open');
-    document.body.style.overflow = '';
+    closeModal();
   }
 });
-
-// console.log(openBtn);
