@@ -424,15 +424,25 @@
   <div class="modal" id="modal">
     <div class="modal__body">
       <div class="modal__content">
-        <h1 class="md-title">Корзина</h1>
-        <button class="modal__btn" type="button"></button>
-        <div class="modal__images">
-          <img class="modal__images-thumb" src="images/cart.png" alt="Корзина">
+        <div class="modal__content-header">
+          <h1 class="md-title modal__title">Корзина</h1>
+          <button class="modal__btn" type="button">
+            <svg width="25" height="25">
+              <use class="modal-btn__close" xlink:href="images/icon/sprite.svg#close"></use>
+            </svg>
+          </button>
         </div>
-        <p class="md-title">Корзина пуста</p>
-        <p class="modal__text">
-          Но это никогда не поздно исправить :)
-        </p>
+        <div class="modal__content-main">
+          <div class="modal__images">
+            <img class="modal__images-thumb" src="images/cart.png" width="147" height="125" alt="Корзина">
+          </div>
+        </div>
+        <div class="modal__content-footer">
+          <p class="md-title modal__content-title">Корзина пуста</p>
+          <p class="modal__text">
+            Но это никогда не поздно исправить :)
+          </p>
+        </div>
       </div>
     </div>
   </div>

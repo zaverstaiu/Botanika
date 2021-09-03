@@ -90,4 +90,17 @@ $(function () {
     });
   });
 
+
+  // открываем модальное окно
+  $('.user__btn').on('click', function () {
+    $('.modal').toggleClass('modal--open');
+    $('body').addClass('lock');
+  });
+
+  // закрываем модальное окно кнопкой Х
+  $('.modal__btn').on('click', function () {
+    $('.modal').toggleClass('modal--open');
+    $('body').removeClass('lock');
+  });
+
 });
