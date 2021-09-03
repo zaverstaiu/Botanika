@@ -706,7 +706,6 @@ blockquote {
 /* modal------------------------- */
 
 .modal {
-  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -718,6 +717,7 @@ blockquote {
   overflow-y: auto;
   overflow-x: hidden;
   transition: 0.8s ease 0s;
+  z-index: 1000;
 }
 .modal--open {
   opacity: 1;
@@ -728,30 +728,28 @@ blockquote {
   opacity: 1;
 }
 .modal__body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 1.875em 0.625em;
-  background-color: bisque;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
 }
 .modal__content {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
-  min-height: 493px;
   width: 100%;
-  padding: 1.875em 4.375em 3.125em;
+  padding: 1.875em 0 3.125em;
   border-radius: 10px;
   background-color: var(--white-t);
-  transform: translateY(-20%) rotateX(80deg);
+  transform: translateY(-40%) rotateX(70deg);
   transition: transform .8s ease, opacity .3s ease;
 }
 .modal__content-header {
   display: flex;
   align-items: center;
   max-width: 100%;
-  padding-bottom: 1em;
+  padding: 0 4.375em 1em;
   border-bottom: 1px solid var(--accent-c);
 }
 .modal__title {

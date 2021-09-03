@@ -92,15 +92,38 @@ $(function () {
 
 
   // открываем модальное окно
-  $('.user__btn').on('click', function () {
-    $('.modal').toggleClass('modal--open');
-    $('body').addClass('lock');
-  });
+
+
+
 
   // закрываем модальное окно кнопкой Х
-  $('.modal__btn').on('click', function () {
-    $('.modal').toggleClass('modal--open');
-    $('body').removeClass('lock');
-  });
+
+
+  
 
 });
+
+let openBtn = document.querySelector('[data-modal]');
+let modal = document.querySelector('.modal');
+let closeBtn = document.querySelector('.modal__btn');
+
+openBtn.addEventListener('click', function () {
+  modal.classList.toggle('modal--open');
+  document.body.style.overflow = 'hidden';
+});
+
+
+closeBtn.addEventListener('click', function () {
+  modal.classList.toggle('modal--open');
+  document.body.style.overflow = '';
+});
+
+
+modal.addEventListener('click', function (e) {
+  if (e.target === modal) {
+    modal.classList.toggle('modal--open');
+    document.body.style.overflow = '';
+  }
+});
+
+// console.log(openBtn);
