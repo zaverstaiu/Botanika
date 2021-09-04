@@ -68,7 +68,7 @@ $(function () {
 
 
   // плавный скролл
-  $("#menu-list, #footer-menu__list").on("click", "a", function (event) {
+  $('#menu-list, #footer-menu__list').on('click', 'a', function (event) {
     event.preventDefault(); //отменяем стандартную обработку нажатия по ссылке
     let id = $(this).attr('href'),  //забираем идентификатор блока с атрибута href
       top = $(id).offset().top; //узнаем высоту от начала страницы до блока на который ссылается якорь
@@ -90,7 +90,7 @@ $(function () {
     });
   });
 
-  
+
   //функция открытия окна
   function openModal() {
     if ($('.modal').hasClass('modal--open') && $('body').hasClass('lock')) {
@@ -109,7 +109,7 @@ $(function () {
     }
   }
   // открываем модальное окно
-  $('.user__btn').on('click', openModal);
+  $('[data-modal]').on('click', openModal);
 
   // закрываем модальное окно кнопкой Х
   $('.modal__btn').on('click', closeModal);

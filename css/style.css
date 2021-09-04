@@ -152,6 +152,7 @@ blockquote {
   padding-top: 1.625em;
 }
 .header-inner {
+  min-height: 64px;
   border-top: 1px solid var(--accent-c);
   border-bottom: 1px solid var(--accent-c);
 }
@@ -225,8 +226,10 @@ blockquote {
 .hero__inner {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 3.125em 0 1.5em;
+  margin-bottom: 1.5em;
+  padding-top: 3.125em;
 }
 .hero-content {
   max-width: 390px;
@@ -272,11 +275,12 @@ blockquote {
 
 .advantages__inner {
   padding-top: 1.5em;
-  padding-bottom: 2.5em;
+  margin-bottom: 2.5em;
 }
 .advantages__list {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   max-width: 100%;
 }
@@ -382,14 +386,15 @@ blockquote {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 2.5em;
-  padding: 2.5em 0;
+  margin-bottom: 1.875em;
+  padding-top: 2.5em;
 }
 .catalog__item {
   position: relative;
   max-width: 388px;
   min-height: 442px;
   margin-right: 1.125em;
+  margin-bottom: 1.125em;
   color: var(--white-t);
 }
 .catalog__item:last-child {
@@ -407,14 +412,16 @@ blockquote {
   left: 0;
   bottom: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  text-align: center;
   opacity: 0;
   transition: .2s ease-in;
 }
 .catalog__item-title {
   margin-bottom: 0.223em;
-  padding-top: 5.083em;
 }
 .catalog__item-link:hover {
   background: rgba(174, 124, 120, 0.6);
