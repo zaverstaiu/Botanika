@@ -162,9 +162,13 @@ blockquote {
 }
 .menu__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .menu__item {
 	position: relative;
+  margin-bottom: 0.625em;
 }
 .menu__item+.menu__item {
   margin-left: 5em;
@@ -199,6 +203,7 @@ blockquote {
 .user {
   position: relative;
   margin-left: 5.63em;
+  margin-bottom: 0.625em;
 }
 .mobile-btn,
 .mobile-menu__list {
