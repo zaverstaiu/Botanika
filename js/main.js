@@ -46,7 +46,7 @@ $(function () {
 
 
   // слайдер
-    $('.popular__list').slick({
+  $('.popular__list').slick({
 
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -64,16 +64,16 @@ $(function () {
         }
       },
     ]
-    });
+  });
 
 
   // плавный скролл
   $("#menu-list, #footer-menu__list").on("click", "a", function (event) {
-      event.preventDefault(); //отменяем стандартную обработку нажатия по ссылке
-      let id = $(this).attr('href'),  //забираем идентификатор блока с атрибута href
-        top = $(id).offset().top; //узнаем высоту от начала страницы до блока на который ссылается якорь
-      $('body,html').animate({ scrollTop: top }, 1000); //анимируем переход на расстояние - top за 1500 мс
-    });
+    event.preventDefault(); //отменяем стандартную обработку нажатия по ссылке
+    let id = $(this).attr('href'),  //забираем идентификатор блока с атрибута href
+      top = $(id).offset().top; //узнаем высоту от начала страницы до блока на который ссылается якорь
+    $('body,html').animate({ scrollTop: top }, 1000); //анимируем переход на расстояние - top за 1500 мс
+  });
 
 
   // кнопка плавной прокрутки содержимого страницы, вверх
@@ -90,42 +90,73 @@ $(function () {
     });
   });
 
+  
+  //функция открытия окна
+  function openModal() {
+    if ($('.modal').hasClass('modal--open') && $('body').hasClass('lock')) {
 
+    } else {
+      $('.modal').addClass('modal--open');
+      $('body').addClass('lock');
+    }
+  }
+
+  //функция закрытия окна
+  function closeModal() {
+    if ($('.modal').hasClass('modal--open') && $('body').hasClass('lock')) {
+      $('.modal').removeClass('modal--open');
+      $('body').removeClass('lock');
+    }
+  }
   // открываем модальное окно
-
-
-
+  $('.user__btn').on('click', openModal);
 
   // закрываем модальное окно кнопкой Х
+  $('.modal__btn').on('click', closeModal);
 
+  // закрываем окно кликом вне окна
+  $('.modal').on('click', function (e) {
+    if ($(e.target).is('.modal')) {
+      closeModal();
+    }
+  });
 
-
+  //закрываем окно клавишей ESC
+  $(document).on('keydown', function (e) {
+    if (e.keyCode === 27 && $('.modal').hasClass('modal--open')) {
+      closeModal();
+    }
+  });
 
 });
 
 // находим элементы
-let openBtn = document.querySelector('[data-modal]');
-let modal = document.querySelector('.modal');
-let closeBtn = document.querySelector('.modal__btn');
-
-// открываем окно
-openBtn.addEventListener('click', function () {
-  modal.classList.toggle('modal--open');
-  document.body.style.overflow = 'hidden';
-});
+// let openBtn = document.querySelector('[data-modal]');
+// let modal = document.querySelector('.modal');
+// let closeBtn = document.querySelector('.modal__btn');
 
 // функция закрытия окна
-function closeModal() {
-  modal.classList.toggle('modal--open');
-  document.body.style.overflow = '';
-}
+// function closeModal() {
+//   modal.classList.toggle('modal--open');
+//   document.body.style.overflow = '';
+// }
+
+// открываем окно
+// openBtn.addEventListener('click', closeModal);
 
 // закрываем окно кнопкой Х
-closeBtn.addEventListener('click', closeModal);
+// closeBtn.addEventListener('click', closeModal);
 
 // закрываем окно кликом вне окна
-modal.addEventListener('click', function (e) {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
+// modal.addEventListener('click', function (e) {
+//   if (e.target === modal) {
+//     closeModal();
+//   }
+// });
+
+//закрываем окно клавишей ESC
+// document.addEventListener('keydown', (e) => {
+//   if (e.code === 'Escape' && modal.classList.contains('modal--open')) {
+//     closeModal();
+//   }
+// });
