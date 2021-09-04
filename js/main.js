@@ -68,7 +68,7 @@ $(function () {
 
 
   // плавный скролл
-  $('#menu-list, #footer-menu__list').on('click', 'a', function (event) {
+  $('#menu-list, #menu-list--two, #footer-menu__list').on('click', 'a', function (event) {
     event.preventDefault(); //отменяем стандартную обработку нажатия по ссылке
     let id = $(this).attr('href'),  //забираем идентификатор блока с атрибута href
       top = $(id).offset().top; //узнаем высоту от начала страницы до блока на который ссылается якорь
