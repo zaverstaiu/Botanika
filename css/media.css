@@ -247,6 +247,12 @@
   .popular__link {
     padding: 0.94em 3.125em;
   }
+
+  /* up-scroll --------------------------- */
+  .up-scroll {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -285,6 +291,11 @@
     margin-bottom: 1.25em;
   }
 
+  /* up-scroll --------------------------- */
+  .up-scroll {
+  	opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 520px) {

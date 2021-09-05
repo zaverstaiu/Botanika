@@ -98,6 +98,7 @@ $(function () {
     } else {
       $('.modal').addClass('modal--open');
       $('body').addClass('lock');
+      $('body').addClass('padding-lock'); // устранение подёргивания экрана
     }
   }
 
@@ -106,6 +107,7 @@ $(function () {
     if ($('.modal').hasClass('modal--open') && $('body').hasClass('lock')) {
       $('.modal').removeClass('modal--open');
       $('body').removeClass('lock');
+      $('body').removeClass('padding-lock');
     }
   }
   // открываем модальное окно

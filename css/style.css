@@ -92,6 +92,10 @@ blockquote {
   overflow: hidden;
 }
 
+.padding-lock {
+	padding-right: 17px;
+}
+
 .page {
   display: flex;
   flex-direction: column;
