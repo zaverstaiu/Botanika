@@ -737,10 +737,6 @@ blockquote {
   opacity: 1;
   visibility: visible;
 }
-.modal--open .modal__content {
-  transform: translateY(0) rotateX(0deg);
-  opacity: 1;
-}
 .modal__body {
   position: fixed;
   top: 50%;
@@ -760,8 +756,12 @@ blockquote {
   padding: 1.875em 0 3.125em;
   border-radius: 10px;
   background-color: var(--white-t);
-  transform: translateY(-40%) rotateX(70deg);
-  transition: transform .8s ease, opacity .3s ease;
+  transform: translateY(-40%) rotateX(80deg);
+  transition: transform .5s ease;
+}
+.modal--open .modal__content {
+	transform: translateY(0) rotateX(0deg);
+	opacity: 1;
 }
 .modal__content-header {
   display: flex;

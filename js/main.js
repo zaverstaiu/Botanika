@@ -97,6 +97,7 @@ $(function () {
 
     } else {
       $('.modal').addClass('modal--open');
+      $('.modal__body').addClass('padding-lock');
       $('body').addClass('lock');
       $('body').addClass('padding-lock'); // устранение подёргивания экрана
     }
@@ -106,6 +107,7 @@ $(function () {
   function closeModal() {
     if ($('.modal').hasClass('modal--open') && $('body').hasClass('lock')) {
       $('.modal').removeClass('modal--open');
+      $('.modal__body').removeClass('padding-lock');
       $('body').removeClass('lock');
       $('body').removeClass('padding-lock');
     }
