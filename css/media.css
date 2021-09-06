@@ -102,6 +102,13 @@
   	margin-left: 1.5em;
   }
 
+  /* modal -------------------------- */
+  .modal__body {
+    width: 80%;
+  }
+  .modal__content-header {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 924px) {
@@ -296,6 +303,15 @@
   	opacity: 0;
     visibility: hidden;
   }
+
+  /* modal ------------------------------- */
+  .modal__content {
+    padding: 1em 0;
+  }
+  .modal__title,
+  .modal__content-title {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -345,6 +361,12 @@
   /* reviews ----------------------------- */
   .reviews__item {
     max-width: 100%;
+  }
+
+  /* modal ------------------------------- */
+  .modal__body {
+    width: 100%;
+    padding: 0 1em;
   }
 }
 

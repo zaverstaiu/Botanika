@@ -786,6 +786,11 @@ blockquote {
   max-width: 147px;
   min-height: 125px;
 }
+.modal__images-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .modal__content-footer {
 	flex: 0 0 auto;
   margin: 0 auto;
