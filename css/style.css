@@ -430,14 +430,16 @@ blockquote {
 
 /* discount ------------------------------- */
 
+.discount {
+  background-color: var(--accent-c);
+  color: var(--white-t);
+}
 .discount__inner {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 2.5em;
-  background-color: var(--accent-c);
-  color: var(--white-t);
 }
 .discount__content {
   max-width: 430px;
