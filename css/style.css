@@ -239,7 +239,7 @@ blockquote {
 }
 .hero-link {
   display: inline-block;
-  padding: 1.25em 3.125em;
+  padding: 1.875em 4.375em;
   border-radius: 40px;
   background-color: var(--accent-c);
   color: var(--white-t);
@@ -260,11 +260,11 @@ blockquote {
 }
 .hero-tulip {
   align-self: flex-end;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .hero-rose {
   margin-bottom: 2.63em;
-  margin-right: 1.25em;
+  margin-left: 1.25em;
 }
 
 /* /hero ------------------------------- */

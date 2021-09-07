@@ -1,6 +1,9 @@
 @media screen and (max-width: 1229px) {
 
   /* hero --------------------------*/
+  .hero-tulip {
+    margin-left: 1.25em;
+  }
   .hero-rose {
     margin-top: 3.125em;
   }
@@ -337,6 +340,9 @@
   .hero-text {
     font-size: 1.25rem;
   }
+  .hero-link {
+    padding: 1.25em 1.875em;
+  }
   .hero-rose {
     margin-right: 0;
     margin-top: 1.25em;
@@ -392,6 +398,10 @@
   /* hero ----------------------------- */
   .hero-text {
   	font-size: 1rem;
+  }
+  .hero-link {
+  	padding: 1em 1.875em;
+    font-size: 0.875rem;
   }
 
    /* popular ----------------------------- */
