@@ -112,16 +112,27 @@ $(function () {
       $('body').removeClass('padding-lock');
     }
   }
+
+  function lockBody() {
+    if ($('.mobile-menu__list').hasClass('mobile-menu__list--open')) {
+      $('body').addClass('lock');
+    } else {
+      $('body').removeClass('lock');
+    }
+  }
+
   // открываем модальное окно
   $('[data-modal]').on('click', openModal);
 
   // закрываем модальное окно кнопкой Х
   $('.modal__btn').on('click', closeModal);
+  $('.modal__btn').on('click', lockBody);
 
   // закрываем окно кликом вне окна
   $('.modal').on('click', function (e) {
     if ($(e.target).is('.modal')) {
       closeModal();
+      lockBody();
     }
   });
 
@@ -129,8 +140,10 @@ $(function () {
   $(document).on('keydown', function (e) {
     if (e.keyCode === 27 && $('.modal').hasClass('modal--open')) {
       closeModal();
+      lockBody();
     }
   });
+
 
 });
 

@@ -210,14 +210,8 @@ blockquote {
   margin-left: 5.63em;
   margin-bottom: 0.625em;
 }
-.mobile-btn,
-.mobile-menu__list {
+.mobile-btn {
   display: none;
-}
-.mobile-menu__list {
-  min-height: 150px;
-  max-height: 70vh;
-  overflow-y: auto;
 }
 
 
